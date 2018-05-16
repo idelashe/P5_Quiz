@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html>
+    <body>
+    <title>
+        Lista de Quizzes
+    </title>
+    <table>
+        <% var quiz = (JSON.parse(quizList)) %>
+        <% for(i = 0; i<quiz.length; i++){ %>
+        <tr>
+            <td>
+                <%-quiz[i].question +":"%>
+            </td>
+            <td>
+                <%- quiz[i].answer %>
+            </td>
+        </tr>
+            <% } %>
+    </table>
+    </body>
+</html>
